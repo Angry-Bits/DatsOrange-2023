@@ -3,6 +3,10 @@
 import requests
 
 from src.logger import logger
+
+# from ..settings import TEAM_TOKEN
+
+from src.settings import TEAM_TOKEN
 from src.settings import TEAM_TOKEN
 
 
@@ -20,7 +24,6 @@ def main(url: str = 'https://www.google.ru/') -> None:
     else:
         logger.info(('Вы не ввели секретный токен! '
                     'Заполните его и повторите попытку.'))
-        return
     if page.status_code:
         logger.info('К хакатону готовы!')
     else:
