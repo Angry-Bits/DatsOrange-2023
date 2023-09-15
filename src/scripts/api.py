@@ -10,6 +10,17 @@ def get_sell_stock():
     return r.json()
 
 
+def get_news():
+    """
+    Получить последние новости за 1 минуту
+    """
+    url = "https://datsorange.devteam.games/news/LatestNews1Minute"
+    header = {"token": TEAM_TOKEN}
+
+    r = httpx.get(url, headers=header)
+    # print(r.json())
+    return r.json()
+
 def get_symbols():
     url = "https://datsorange.devteam.games/getSymbols"
     header = {"token": TEAM_TOKEN}
@@ -60,6 +71,7 @@ def info():
     header = {"token": TEAM_TOKEN}
 
     r = httpx.get(url, headers=header)
+    return r.json()
 
 def cancel_bid(bid_id: int):
     """
