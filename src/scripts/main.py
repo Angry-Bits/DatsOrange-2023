@@ -4,13 +4,11 @@ import requests
 
 from src.logger import logger
 
-# from ..settings import TEAM_TOKEN
-
 from src.settings import TEAM_TOKEN
-from src.settings import TEAM_TOKEN
+from src.scripts.api import *
 
 
-def main(url: str = 'https://www.google.ru/') -> None:
+def main2(url: str = 'https://www.google.ru/') -> None:
     """Request checking script."""
     page = requests.get(url)
     logger.info(f'Выполнен запрос на {url}')
@@ -30,6 +28,10 @@ def main(url: str = 'https://www.google.ru/') -> None:
         logger.info(('Ответ на запрос не получен. '
                     'Убедитесь в корректности адреcа запрашиваемого ресурса.'))
 
+
+
+def main():
+    get_news()
 
 if __name__ == '__main__':
     main()
