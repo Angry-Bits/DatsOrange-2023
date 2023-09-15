@@ -1,1 +1,213 @@
-# info.txt
+{
+    "account": {
+        "id": 127,
+        "name": "Angry Bits"
+    },
+    "bids": [
+        {
+            "id": 2485983,
+            "symbolId": 1014,
+            "price": 11,
+            "type": "BUY",
+            "createDate": "2023-09-15T16:39:52.849792904Z"
+        },
+        {
+            "id": 2486610,
+            "symbolId": 1399,
+            "price": 11,
+            "type": "BUY",
+            "createDate": "2023-09-15T16:39:53.472910407Z"
+        },
+        {
+            "id": 2485072,
+            "symbolId": 1088,
+            "price": 11,
+            "type": "BUY",
+            "createDate": "2023-09-15T16:39:50.707326998Z"
+        },
+        {
+            "id": 2485235,
+            "symbolId": 343,
+            "price": 11,
+            "type": "BUY",
+            "createDate": "2023-09-15T16:39:50.992005437Z"
+        },
+        {
+            "id": 2485028,
+            "symbolId": 1849,
+            "price": 11,
+            "type": "BUY",
+            "createDate": "2023-09-15T16:39:50.391765155Z"
+        },
+        {
+            "id": 2485446,
+            "symbolId": 1691,
+            "price": 11,
+            "type": "BUY",
+            "createDate": "2023-09-15T16:39:52.000494204Z"
+        },
+        {
+            "id": 2484944,
+            "symbolId": 1335,
+            "price": 11,
+            "type": "BUY",
+            "createDate": "2023-09-15T16:39:50.092661993Z"
+        },
+        {
+            "id": 2485825,
+            "symbolId": 1172,
+            "price": 11,
+            "type": "BUY",
+            "createDate": "2023-09-15T16:39:52.572293110Z"
+        },
+        {
+            "id": 2486216,
+            "symbolId": 480,
+            "price": 11,
+            "type": "BUY",
+            "createDate": "2023-09-15T16:39:53.164322935Z"
+        },
+        {
+            "id": 2486674,
+            "symbolId": 575,
+            "price": 11,
+            "type": "BUY",
+            "createDate": "2023-09-15T16:39:53.786762502Z"
+        },
+        {
+            "id": 2485342,
+            "symbolId": 119,
+            "price": 11,
+            "type": "BUY",
+            "createDate": "2023-09-15T16:39:51.614189052Z"
+        },
+        {
+            "id": 2485491,
+            "symbolId": 941,
+            "price": 11,
+            "type": "BUY",
+            "createDate": "2023-09-15T16:39:52.275684807Z"
+        },
+        {
+            "id": 2485279,
+            "symbolId": 1270,
+            "price": 11,
+            "type": "BUY",
+            "createDate": "2023-09-15T16:39:51.313812997Z"
+        }
+    ],
+    "assets": [
+        {
+            "id": 192,
+            "name": "ServicePioneers Solutions",
+            "quantity": 1
+        },
+        {
+            "id": 1,
+            "name": "Oranges",
+            "quantity": 79
+        },
+        {
+            "id": 3,
+            "name": "EcoFields Agriculture",
+            "quantity": 0
+        },
+        {
+            "id": 4,
+            "name": "GrowThrive Farms",
+            "quantity": 0
+        },
+        {
+            "id": 6,
+            "name": "NatureBounty Agriculture",
+            "quantity": 0
+        },
+        {
+            "id": 7,
+            "name": "HealthyRoots Farming",
+            "quantity": 0
+        },
+        {
+            "id": 8,
+            "name": "SunBlessed Farms",
+            "quantity": 0
+        },
+        {
+            "id": 9,
+            "name": "VerdantPlains AgriTech",
+            "quantity": 0
+        },
+        {
+            "id": 457,
+            "name": "GourmetFinds Eatery",
+            "quantity": 1
+        },
+        {
+            "id": 10,
+            "name": "GoldenGrain Harvesters",
+            "quantity": 0
+        },
+        {
+            "id": 11,
+            "name": "ForestGuardians Inc.",
+            "quantity": 0
+        },
+        {
+            "id": 12,
+            "name": "WiseAcres Farming",
+            "quantity": 0
+        },
+        {
+            "id": 13,
+            "name": "PureLand Agriculture",
+            "quantity": 0
+        },
+        {
+            "id": 15,
+            "name": "EarthSprout Farms",
+            "quantity": 0
+        },
+        {
+            "id": 16,
+            "name": "Timberwise Forestry",
+            "quantity": 0
+        },
+        {
+            "id": 17,
+            "name": "FreshCrop Creators",
+            "quantity": 0
+        },
+        {
+            "id": 18,
+            "name": "HarvestMoon Co.",
+            "quantity": 0
+        },
+        {
+            "id": 19,
+            "name": "FarmFusion AgriTech",
+            "quantity": 0
+        },
+        {
+            "id": 21,
+            "name": "GreenValley Growers",
+            "quantity": 0
+        },
+        {
+            "id": 87,
+            "name": "FarmCreators Co.",
+            "quantity": 0
+        },
+        {
+            "id": 31,
+            "name": "ForestEssence Timber",
+            "quantity": 0
+        }
+    ],
+    "frozenAssets": [
+        {
+            "id": 1,
+            "name": "Oranges",
+            "quantity": 143
+        }
+    ]
+}

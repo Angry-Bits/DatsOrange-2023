@@ -2,7 +2,7 @@ import httpx
 import json
 from pathlib import Path
 
-from src.settings import TEAM_TOKEN, BASE_DIR
+from ..settings import TEAM_TOKEN, BASE_DIR
 
 
 PRINTS = Path(BASE_DIR).joinpath('prints')
@@ -28,7 +28,7 @@ def remove_bid(bid_id: int):
     r = httpx.post(url, headers=header, json=payload)
     result = r.json()
 
-    # write(result, FILE)
+    write(result, FILE)
 
     return result
 
@@ -68,7 +68,7 @@ def place_buy_order(symbol_id: int, price: int, quantity: int):
     r = httpx.post(url, headers=header, json=payload)
     result = r.json()
 
-    # write(result, FILE)
+    write(result, FILE)
 
     return result
 
@@ -89,7 +89,7 @@ def best_price_sell(symbol_id: int, quantity: int):
     r = httpx.post(url, headers=headers, json=payload)
     result = r.json()
 
-    # write(result, FILE)
+    write(result, FILE)
 
     return result
 
@@ -129,7 +129,7 @@ def sell_stock():
     r = httpx.get(url, headers=header)
     result = r.json()
 
-    # write(result, FILE)
+    write(result, FILE)
 
     return result
 
@@ -146,7 +146,7 @@ def get_symbols():
     r = httpx.get(url, headers=header)
     result = r.json()
 
-    # write(result, FILE)
+    write(result, FILE)
 
     return result
 
@@ -163,7 +163,7 @@ def buy_stock():
     r = httpx.get(url, headers=header)
     result = r.json()
 
-    # write(result, FILE)
+    write(result, FILE)
 
     return result
 
@@ -182,7 +182,7 @@ def latest_news():
     r = httpx.get(url, headers=header)
     result = r.json()
 
-    # write(result, FILE)
+    write(result, FILE)
 
     return result
 
@@ -199,7 +199,7 @@ def latest_news_5_minutes():
     r = httpx.get(url, headers=header)
     result = r.json()
 
-    # write(result, FILE)
+    write(result, FILE)
 
     return result
 
@@ -216,7 +216,7 @@ def latest_news_1_minutes():
     r = httpx.get(url, headers=header)
     result = r.json()
 
-    # write(result, FILE)
+    write(result, FILE)
 
     return result
 
@@ -235,10 +235,10 @@ def info():
     r = httpx.get(url, headers=header)
     result = r.json()
 
-    # write(result, FILE)
+    write(result, FILE)
 
     return result
 
 
 if __name__ == "__main__":
-    sell_stock()
+    info()
