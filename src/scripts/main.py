@@ -5,8 +5,8 @@ import requests
 from src.logger import logger
 
 from src.settings import TEAM_TOKEN
-from src.scripts.api import *
-
+#from src.scripts.api import *
+from src.scripts.logic import main_cycle_logic
 
 def main2(url: str = 'https://www.google.ru/') -> None:
     """Request checking script."""
@@ -31,7 +31,7 @@ def main2(url: str = 'https://www.google.ru/') -> None:
 
 
 def main():
-    get_news()
+    main_cycle_logic()
 
 if __name__ == '__main__':
     main()

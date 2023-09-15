@@ -2,10 +2,7 @@ import httpx
 
 from src.settings import TEAM_TOKEN
 
-
-# stock-info
-
-def sell_stock():
+def get_sell_stock():
     url = "https://datsorange.devteam.games/sellStock"
     header = {"token": TEAM_TOKEN}
 
@@ -52,7 +49,9 @@ def latest_news_1_minutes():
     header = {"token": TEAM_TOKEN}
 
     r = httpx.get(url, headers=header)
-    return r.json()
+    news = r.json()
+    # print(r.json())
+    return news
 
 # info-controller
 
