@@ -15,7 +15,7 @@
 ## Команда
 Добро пожаловать в репозиторий команды Angry Bits! 👋
 
-Состав участников: 👨‍💻 [Игорь Гахов](https://github.com/IgorGakhov), 👨‍💻 [Даниил Горбенко](https://t.me/daniil_gorbenko), 👨‍💻 Александр Радченко
+Состав участников: 👨‍💻 [Игорь Гахов](https://github.com/IgorGakhov), 👨‍💻 [Даниил Горбенко](https://github.com/daniilgorbenko), 👨‍💻 [Александр Радченко](https://github.com/Karkyn1)
 
 ## Оглавление
 * [Описание](#описание)

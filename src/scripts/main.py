@@ -7,6 +7,7 @@ from src.logger import logger
 from src.settings import TEAM_TOKEN
 from src.scripts.api import *
 
+
 def main2(url: str = 'https://www.google.ru/') -> None:
     """Request checking script."""
     page = requests.get(url)
