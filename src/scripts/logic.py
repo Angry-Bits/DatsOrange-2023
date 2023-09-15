@@ -10,7 +10,9 @@ import json, os
 def main_cycle_logic():
     with open("../../data/prices_company.json", "r", encoding="utf-8") as f:
         companies_prices = json.load(f)
-    last_time_news = dt.strptime("2023-09-15T14:30:15Z", "%Y-%m-%dT%H:%M:%SZ")
+    with open("../../data/last_time_update.txt", "r", encoding="utf-8") as f:
+        last_time_news = dt.strptime(f.read(), "%Y-%m-%dT%H:%M:%SZ") # json.load(f)
+    # last_time_news = # dt.strptime("2023-09-15T14:30:15Z", "%Y-%m-%dT%H:%M:%SZ")
 
     while 1:
         # print()
@@ -31,9 +33,11 @@ def main_cycle_logic():
                         companies_prices[company] = company_price
 
                     # сохранить в json на всякий
-                    print(os.path.dirname(os.path.realpath(__file__)))
+                    # print(os.path.dirname(os.path.realpath(__file__)))
                     with open("../../data/prices_company.json", "w", encoding="utf-8") as f:
                         json.dump(companies_prices, f, ensure_ascii=False)
+                    with open("../../data/last_time_update.txt", "w", encoding="utf-8") as f:
+                        f.write(_new["date"])
                     print("ПОСЛЕ НОВОСТИ", companies_prices)
 
         time.sleep(1)
