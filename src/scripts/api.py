@@ -241,4 +241,4 @@ def info():
 
 
 if __name__ == "__main__":
-    sell_stock()
+    pass
